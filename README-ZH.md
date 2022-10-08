@@ -2,9 +2,9 @@
 
 [English](/README.md) | 中文
 
-## 介绍
-
 本仓库是零界微前端的一个示例，用零界微前端管理基于 pnpm + Vite + React + Antd + TypeScript 搭建的 MonoRepo。
+
+## 介绍
 
 接入零界微前端只需要 **引入零界提供的脚本** 和 **配置一些变量** ，零界扮演的是一个 `iframe manager` 的角色，所以它的 构建/部署 方式非常灵活。
 
@@ -12,7 +12,7 @@
 
 ## 建议
 
-在demo中，可以发现所有关于 [零界shell](placeholder) 和 [微应用](placeholder) 的配置都远程的，我们是有意这样做的。
+在demo中，可以发现所有关于 [零界shell](https://github.com/lingjie-js/lingjie-demo/blob/main/packages/lingjie/index.html#:~:text=%3Cscript%20src%3D%22https%3A//bolan6180.github.io/lingjie%2Ddemo/lingjie%2Dshell/shell%2Dconfig.js%22%3E%3C/script%3E) 和 [微应用](https://github.com/lingjie-js/lingjie-demo/blob/main/packages/project-a/index.html#:~:text=%3Cscript%20src%3D%22https%3A//bolan6180.github.io/lingjie%2Ddemo/projects/project%2Da/config.js%22%3E%3C/script%3E) 的配置都远程的，我们是有意这样做的。
 
 在零界中，零界shell和所有的微应用都有接入、退出零界的配置，当双方都开启接入时，微应用才能接入零界。
 

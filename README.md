@@ -2,9 +2,11 @@
 
 English | [中文](/README-ZH.md)
 
+Demo of lingjie + monorepo. 
+
+The monorepo is built with pnpm + Vite + React + Antd + TypeScript.
 ## Introduction
 
-This repo shows how to use lingjie to manage the monorepo project, and the monorepo is built with pnpm + Vite + React + Antd + TypeScript.
 
 Importing lingjie scripts and configuring some variables are the only two things needed to connect lingjie. Since lingjie acts as an `iframe manager`, its build/deployment is very flexible.
 
@@ -13,7 +15,7 @@ Lingjie supports both **run-time integration** and **build-time integration**. T
 
 ## Suggestions
 
-You may find the configuration of both lingjie-shell and micro-apps in the remote. We do this intentionally.
+You may find the configuration of both [lingjie-shell](https://github.com/lingjie-js/lingjie-demo/blob/main/packages/lingjie/index.html#:~:text=%3Cscript%20src%3D%22https%3A//bolan6180.github.io/lingjie%2Ddemo/lingjie%2Dshell/shell%2Dconfig.js%22%3E%3C/script%3E) and [micro-apps](https://github.com/lingjie-js/lingjie-demo/blob/main/packages/project-a/index.html#:~:text=%3Cscript%20src%3D%22https%3A//bolan6180.github.io/lingjie%2Ddemo/projects/project%2Da/config.js%22%3E%3C/script%3E) in the remote. We do this intentionally.
 
 Both lingjie-shell and micro-apps have the switch to connect lingjie. Micro-apps would connect to the lingjie micro-frontend only if the switch opened on both sides.
 
