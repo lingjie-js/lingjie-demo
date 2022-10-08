@@ -1,0 +1,30 @@
+{
+  "name": "lingjie-demo",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+
+    "build:standalone-app": "pnpm --filter '@lingjie-demo/project-*' build",
+    "build:proxy-server": "pnpm --filter 'server' build",
+    "serve": "npm-run-all --parallel serve:all-micro-app serve:lingjie-shell serve:proxy-server",
+    "serve:all-micro-app": "pnpm --filter '@lingjie-demo/project-*' preview",
+    "serve:lingjie-shell": "pnpm --filter '@lingjie-demo/lingjie' start",
+    "serve:proxy-server": "pnpm --filter 'server' start",
+
+    "build:micro-frontend": "pnpm run build:shard && pnpm run build:all-micro-app && pnpm run build:lingjie-shell",
+    "build:shard": "pnpm --filter '@lingjie-demo/shard' build",
+    "build:all-micro-app": "pnpm --filter '@lingjie-demo/project-*' build:micro-app",
+    "build:lingjie-shell": "pnpm --filter '@lingjie-demo/lingjie' build",
+    "preview": "vite preview"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "vite": "^3.0.0"
+  }
+}
